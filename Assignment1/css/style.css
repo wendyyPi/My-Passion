@@ -1,0 +1,362 @@
+/* the dimensions will include any padding or border and the content 
+of the element will be sized to fit  */
+* {
+    box-sizing: border-box;
+}
+
+/* remove border */
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+/* navigation and menu:
+navigation bar at the bottom of webpage and format in a line with white color, very easy to see and use*/
+/* set navigation background color */
+.navigation-menu {
+    background-color: rgb(221, 176, 121);
+    overflow: hidden;
+}
+
+/* set the navigation brand style */
+#nav {
+    margin-left: 10px;
+    width: 7%;
+}
+
+/* set menu style */
+.topnav {
+    margin-right: 15px;
+    vertical-align: middle;
+    float: right;
+}
+
+/* menu item make them in a line and change color, style */
+.topnav a {
+    float: left;
+    display: block;
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px 0 bisque;
+    padding: 20px 20px 20px 5px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* hover link */
+.topnav a:hover {
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* welcome page in header */
+/* set welcome image and its position */
+.mainhead {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: white;
+    background-image: url(../Images/background/cat-background.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-heading {
+    font-size: 40px;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.main-subheading {
+    font-size: 57px;
+    margin-bottom: 7.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+}
+
+/* welcome image style */
+#claw {
+    margin-bottom: 4px;
+    width: 10%;
+}
+
+/* find more button */
+.tell {
+    background-color: gold;
+    border: none;
+    color: white;
+    padding: 16px 30px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+/* about me  */
+/* font style of h2, h3, h4, p
+reusable font for headings, subheadings and contents */
+.section-heading-central-h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 8rem;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.section-heading-central-h3 {
+    color: #6c757d;
+    line-height: 1.75;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab";
+    margin-bottom: 3rem;
+}
+
+.section-content-central-p {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    margin-bottom: 10rem;
+}
+
+.section-subheading-h4 {
+    font-size: 21px;
+    font-family: "Montserrat";
+}
+
+h4 {
+    margin: 2px;
+    padding: 0;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-content-align-p-left {
+    text-align: right;
+    margin: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+}
+
+.section-content-align-p-right {
+    text-align: left;
+    margin: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+}
+
+/* Growth Path */
+/* position the list in middle */
+.passion-section {
+    padding: 0;
+    text-align: center;
+}
+
+.growth {
+    padding: 0;
+    list-style: none;
+}
+
+/* make the list in a vertical line of the middle */
+.growth li {
+    min-height: 380px;
+    margin-bottom: 0;
+}
+
+.growth li .growth-timeline {
+    width: 40%;
+    /* adjust the position of text positioned around 40% of the container */
+    padding: 0 0 0 45px;
+    text-align: right;
+}
+
+/* adjust text possion to aligh the image */
+.growth>li.growth-inverted>.growth-timeline {
+    float: right;
+    padding: 0 45px 0 0;
+    text-align: left;
+    /* set text float to right and image to left */
+}
+
+.cat-growth-img {
+    vertical-align: middle;
+    width: 14%;
+    border-radius: 50%;
+    filter: brightness(120%);
+    border: 7px solid rgba(218, 165, 32, 0.681);
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* growth path image modal */
+.cat-growth-img:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(72, 62, 62);
+    /* Fallback color */
+    background-color: rgba(17, 17, 17, 0.9);
+    /* Black opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 45%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation of Zoom in and out */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* footer */
+/* make footer in a little table format and in the middle */
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", Roboto;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background-color: antiquewhite;
+}
+
+.items {
+    float: left;
+    width: 50%;
+}
+
+.copyright {
+    color: black;
+    font-size: 17px;
+}
+

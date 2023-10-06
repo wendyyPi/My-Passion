@@ -1,0 +1,133 @@
+/* Reset margins and paddings */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+@page {
+    size: A4 landscape;
+}
+
+/* force the heading to always be the beginning of a page */
+h1 {
+    page-break-before: always;
+}
+
+/* avoid breaks directly after a heading */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    page-break-after: avoid;
+}
+
+table {
+    page-break-inside: avoid;
+}
+
+
+/* Remove background colors and images */
+body {
+    background: none;
+}
+
+/* Specify font size and color */
+body {
+    font-size: 12pt;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* text indention */
+p {
+    text-indent: 2em;
+}
+
+/* adjust image */
+.cat-growth-img {
+    max-width: 100%;
+    height: auto;
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+
+.g2-row {
+    max-width: 100%;
+    height: auto;
+    width:  230px;
+    height: 200px;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+/* remove hyper link decoration */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* remove dot point in homepage */
+ul.growth {
+    list-style-type: none;
+}
+
+/* Hide unnecessary component */
+header,
+nav,
+button,
+footer {
+    display: none;
+}
+
+#curator-feed-default-feed-layout,#questioncat {
+    display: none;
+}
+
+.product-hover-content,
+.numbertext,
+.prev,
+.next,
+.modal,.row, .social-section, .issue-image{
+    display: none;
+}
+
+/* Increase line height for better readability */
+body {
+    line-height: 1.2;
+}
+
+
+/* format the table for sourcelog print view */
+table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    background-color: transparent;
+    border: 1px solid black;
+}
