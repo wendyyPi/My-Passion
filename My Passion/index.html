@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is the HEADER section-->
+
+<head>
+    <!-- Set the language(specifies the character encoding for the HTML document)-->
+    <meta charset="utf-8">
+    <meta name="description" content="homepage">
+    <!-- create a responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is your title-->
+    <title>Me and my passion</title>
+    <!--Lin CSS to HTML-->
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <!--Set the icon-->
+    <link rel="icon" href="Images/cat.ico">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<!--This is the BODY section-->
+
+<body>
+    <!--Navigation-->
+    <nav class="navigation-menu">
+        <a href="index.html"> <img id="nav" src="Images/background/navigation.jpeg" alt="nav brand"></a>
+        <!--This is menu section-->
+        <div class="topnav" id="menu">
+            <a href="index.html">Home</a>
+            <a href="mepassion.html">My Passion</a>
+            <a href="raisecat.html">Raise Cat</a>
+            <a href="question.html">Q & A</a>
+            <a href="feedback.html">Contact</a>
+            <a href="sitemap.html">Site Map</a>
+            <a href="sourcelog.html">Source Log</a>
+            <a href="javascript:void(0);" class="icon" onclick="myResponsiveMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!--used to open and close the topnav on small screens-->
+
+        </div>
+    </nav>
+
+    <!--Main Section-->
+
+    <!--Welcome page-->
+    <header class="mainhead">
+        <div class="main">
+            <img id="claw" src="Images/background/cat-claw.png" alt="cat claw">
+            <div class="main-heading">Welcome To My World!</div>
+            <div class="main-subheading">Nice To Meet You Here</div>
+            <a class="tell" href="#passion">Find More</a>
+        </div>
+    </header>
+
+    <!--My Passion-->
+    <a id="passion"></a>
+    <div class="passion-section">
+        <h2 class="section-heading-central-h2">Growth Path</h2>
+        <h3 class="section-heading-central-h3">
+            The stages of My cat Hetao's growth — from small to large
+        </h3>
+        <ul class="growth">
+            <li>
+                <div class="growth-image">
+                    <img class="cat-growth-img" src="Images/my-passion/growth-1.png" alt="Hetao was born"
+                        onclick="myImageModal()">
+                </div>
+                <div class="growth-timeline">
+                    <h4>June 2021</h4>
+                    <h4 class="section-subheading-h4">Hetao was born</h4>
+                    <div class="growth-body">
+                        <p class="section-content-align-p-left">
+                            Hetao was born on 28/06/2021. He is a ragdoll
+                            and he is only 800g weight. As he has a brown
+                            hair and looks like a ball which looks like a
+                            kind of walnut, so we name it as Hetao.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="growth-inverted">
+                <div class="growth-image">
+                    <img class="cat-growth-img" id="myImg" src="Images/my-passion/growth-2.png"
+                        alt="First Time Meet Hetao" onclick="myImageModal()">
+                </div>
+
+                <div class="growth-timeline">
+                    <h4>September 2021</h4>
+                    <h4 class="section-subheading-h4">
+                        The First time I met Hetao
+                    </h4>
+                    <div class="growth-body">
+                        <p class="section-content-align-p-right">
+                            The first time I see him was in a pet adopt
+                            place, he is so small and cute. I reached out my
+                            hand and he sniffed it cautiously before rubbing
+                            his head against it affectionately. From that
+                            moment on, I knew he is the one I want.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="growth-image">
+                    <img class="cat-growth-img" src="Images/my-passion/growth-3.png" alt="Hetao grew up a little"
+                        onclick="myImageModal()">
+                </div>
+                <div class="growth-timeline">
+                    <h4>April 2022</h4>
+                    <h4 class="section-subheading-h4">
+                        Hetao was 8 month old
+                    </h4>
+                    <div class="growth-body">
+                        <p class="section-content-align-p-left">
+                            Hetao has gradually grow up. He has become a
+                            little big now and his blur becomes more brown
+                            and darker. He was so cute that lying on my
+                            chair and stair at me. His personality also
+                            continue to develop and he becomes more
+                            outgoing, more playful.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="growth-inverted">
+                <div class="growth-image">
+                    <img class="cat-growth-img" src="Images/my-passion/growth-4.png" alt="Hetao was an adult cat"
+                        onclick="myImageModal()">
+                </div>
+                <div class="growth-timeline">
+                    <h4>January 2023</h4>
+                    <h4 class="section-subheading-h4">
+                        Hetao was one year and a half
+                    </h4>
+                    <div class="growth-body">
+                        <p class="section-content-align-p-right">
+                            Hetao becomes an adult cat. He is so big and
+                            strong with very long hair. He becomes more
+                            confident and independent as well. He now spends
+                            more time exploring the environment like usually
+                            stair at the worms and birds and less time
+                            seeking out my attention.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- add my passion section image modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="image" id="img01" alt="image">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="items">
+            <div class="copyright">Copyright &copy; My Website 2023</div>
+        </div>
+        <div class="items">
+            <!-- Facebook share button code -->
+            <a id="facebook"></a>
+            <div class="fb-share-button" data-href="https://stuweb.cecs.anu.edu.au/~u7588890/index.html" data-layout="button"
+                data-size="large"><a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstuweb.cecs.anu.edu.au%2F%7Eu7588890%2Findex.html&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Share</a></div>
+        </div>
+
+    </footer>
+
+    <!-- Core theme JS-->
+    <script src="js/script.js"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0"
+        nonce="in0aVVGX"></script>
+</body>
+
+</html>

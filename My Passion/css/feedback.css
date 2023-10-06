@@ -1,0 +1,94 @@
+/* feedback */
+
+.feedback-section {
+    margin-top: 6rem;
+}
+
+/* feedback form with enough room for user to type, wider input area */
+form {
+    margin-left: 25%;
+}
+
+.form-control {
+    border: 1.5px solid #ced4da;
+    /* add border to the form and change color */
+}
+
+.form-radio {
+    font-size: 17px;
+}
+
+.form-label {
+    font-size: 20px;
+}
+
+/* format the placeholder to make it bigger and clearer */
+
+input::placeholder {
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.7;
+    color: gray;
+}
+
+textarea::placeholder {
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.7;
+    color: gray;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 14px;
+    margin: 15px 0px 20px 1px;
+    font-family: Arial;
+}
+
+input[type="radio"] {
+    margin: 10px 0 21px 5px;
+}
+
+label {
+    margin: 2px 5px;
+    font-weight: bold;
+}
+
+textarea {
+    margin: 15px 0px 15px 5px;
+    width: 60%;
+    height: 130px;
+    padding: 15px;
+    font-family: Arial;
+    /* long text area for feedback */
+}
+
+input[type="submit"] {
+    background-color: lightseagreen;
+    border: none;
+    color: white;
+    padding: 18px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-left: 25%;
+    cursor: pointer;
+    /* change the cursor when click the button */
+}
+
+/* format the button like a rectangle button, easy to use */
+
+input[type="reset"] {
+    background-color: rgb(156, 152, 152);
+    border: none;
+    color: white;
+    padding: 18px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+/* button in the middle */
+.button-group {
+    margin-right: 23%;
+}

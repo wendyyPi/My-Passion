@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Me and My Passion</title>
+    <meta name="description" content="aboutme">
+    <!-- create a responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Lin CSS to HTML-->
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/passion.css" media="screen">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <!--Set the icon-->
+    <link rel="icon" href="Images/cat.ico">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+    <script src="js/passion.js"></script>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="navigation-menu">
+        <div class="main-nav">
+            <a id="top-brand" href="index.html"> <img id="nav" src="Images/background/navigation.jpeg"
+                    alt="cat nav"></a>
+            <!--This is menu section-->
+            <div class="topnav" id="menu">
+                <a href="index.html">Home</a>
+                <a href="raisecat.html">Raise Cat</a>
+                <a href="question.html">Q & A</a>
+                <a href="feedback.html">Contact</a>
+                <a href="sitemap.html">Site Map</a>
+                <a href="sourcelog.html">Source Log</a>
+                <a href="javascript:void(0);" class="icon" onclick="myResponsiveMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!--used to open and close the topnav on small screens-->
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Section-->
+
+    <!--About Me-->
+    <a id="about"></a>
+    <div class="aboutme">
+        <h2 class="section-heading-central-h2">About me</h2>
+        <h3 class="section-heading-central-h3">"Focus on what you can do, rather than letting what you cannot do get in
+            the way."</h3>
+        <div class="section-text-center">
+            <div class="about-section">
+                <img class="passion-img" id="my-photo" src="Images/about-me/me.jpeg" alt="my selfie">
+                <h4 class="section-subheading-h4">Computing Student</h4>
+                <p class="section-content-central-p">
+                    Hi, I'm Wenyi Pi from ANU University studying Master of Computing and I'm passionate about
+                    programming, web
+                    development
+                    and business analytics.
+                    I always looking for chances to learn and apply my skills in real-world community and excited to
+                    connect
+                    with
+                    others in computing.
+                </p>
+            </div>
+            <div class="about-section">
+                <img class="passion-img" id="mycat-photo" src="Images/about-me/mycat.jpeg" alt="cat">
+                <h4 class="section-subheading-h4">Pet Lover</h4>
+                <p class="section-content-central-p">
+                    I love animals, especially cats. I also have a cat in my house, he is a ragdoll and his name is
+                    Hetao.
+                    He is very cute and brings so much joy to my life. I love meeting other pet owners and their furry
+                    friends.
+                </p>
+            </div>
+            <div class="about-section">
+                <img class="passion-img" id="food-photo" src="Images/about-me/food.jpeg" alt="food">
+                <h4 class="section-subheading-h4>Foodie">Foodie</h4>
+                <p class="section-content-central-p">
+                    I am a foodie, I love food from various countries and experiencing new cultures through their
+                    cuisines.
+                    I like cook as well, I usually explore new dishes and try new recipes. If you are looking for
+                    someone to
+                    enjoy
+                    meal with, I would be happy to join.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Photo Gallery 1 my cat's moment-->
+    <!-- Container for the image gallery -->
+
+    <div class="funny-moment">
+        <h1>Funny & Cute Moment</h1>
+        <a id="moment"></a>
+        <div id="myHeader" class="header">
+            <h3 class="section-heading-central-h3">"Find more funny and cute moment about Hetao."</h3>
+            <p>Change the grid view.</p>
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+        </div>
+        <!-- Photo Grid -->
+        <div class="g2-row">
+            <div class="g2-column">
+                <img src="Images/my-passion/gallery1.png" alt="cat1" title="gallery1" style="width:100%">
+                <img src="Images/my-passion/gallery2.png" alt="cat2" title="gallery2" style="width:100%">
+            </div>
+            <div class="g2-column">
+                <img src="Images/my-passion/gallery7.png" alt="cat7" title="gallery7" style="width:100%">
+                <img src="Images/my-passion/gallery6.png" alt="cat6" title="gallery6" style="width:100%">
+                <img src="Images/my-passion/gallery4.png" alt="cat4" title="gallery4" style="width:100%">
+                <img src="Images/my-passion/gallery3.png" alt="cat3" title="gallery3" style="width:100%">
+            </div>
+            <div class="g2-column">
+                <img src="Images/my-passion/gallery8.png" alt="cat8" title="gallery8" style="width:100%">
+                <img src="Images/my-passion/gallery9.png" alt="cat9" title="gallery9" style="width:100%">
+                <img src="Images/my-passion/gallery5.png" alt="cat5" title="gallery5" style="width:100%">
+            </div>
+            <div class="g2-column">
+                <img src="Images/my-passion/gallery10.png" alt="cat10" title="gallery10" style="width:100%">
+                <img src="Images/my-passion/gallery1.png" alt="cat1" title="gallery1" style="width:100%">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="copyright">Copyright &copy; My Website 2023</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core theme JS-->
+    <script src="js/script.js"></script>
+    <script src="js/passion.js"></script>
+    <script>
+        // Add active class to the current button (highlight it)
+        // Get the container element
+        var header = document.getElementById("myHeader");
+        // Get all buttons with class="btn" inside the container
+        var btns = header.getElementsByClassName("btn");
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                // If there's no active class
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                // Add the active class to the current/clicked button
+                this.className += " active";
+            });
+        }
+//I put the active button here for finding the buttons, as I put it in passion.js, it will show error about not finding the button.
+    </script>
+</body>
+
+</html>

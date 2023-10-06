@@ -1,0 +1,54 @@
+/* change the question heading and content font */
+.mission-section {
+    text-align: center;
+}
+
+.section-heading-h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.section-heading-h3 {
+    color: #6c757d;
+    line-height: 1.75;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab";
+    margin-bottom: 0;
+}
+
+.textheader-h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+#mission-p {
+    font-size: 19px;
+    font-weight: 200;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+/* change the cat image size */
+#product {
+    width: 600px;
+    height: 450px;
+}
+
+
+#list-goal li {
+    font-size: 18px;
+    margin: 5px;
+    margin-left: 3%;
+    margin-bottom: 6px;
+}
